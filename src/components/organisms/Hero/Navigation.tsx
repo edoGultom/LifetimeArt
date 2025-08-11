@@ -11,6 +11,7 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [isAtTopXL, setIsAtTopXL] = useState(false);
 
   const menuItems = [
     { label: "About", href: "#about" },
@@ -23,12 +24,14 @@ export default function Navigation() {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
+      const isXL = window.innerWidth >= 1440;
+
+      // Cek posisi top + ukuran XL
+      setIsAtTopXL(currentScrollY === 0 && isXL);
 
       if (currentScrollY > lastScrollY && currentScrollY > 110) {
-        // Scroll ke bawah dan sudah lewat 100px
         setShowHeader(false);
       } else {
-        // Scroll ke atas
         setShowHeader(true);
       }
 
@@ -36,7 +39,15 @@ export default function Navigation() {
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleScroll);
+
+    // Trigger awal
+    handleScroll();
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleScroll);
+    };
   }, [lastScrollY]);
 
   useEffect(() => {
@@ -49,12 +60,19 @@ export default function Navigation() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 sm:bg-background-hero xl:bg-transparent ${
-        showHeader || isOpen ? "translate-y-0" : "-translate-y-full"
-      } `}
+      //   className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 sm:bg-background-hero  ${
+      //     showHeader || isOpen
+      //       ? "translate-y-0 bg-background-hero"
+      //       : "-translate-y-full xl:!bg-transparent"
+      //   } `}
+      className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 
+        ${showHeader || isOpen ? "translate-y-0" : "-translate-y-full"} 
+        ${
+          isAtTopXL ? "!bg-transparent" : "bg-background-hero"
+        } sm:bg-background-hero`}
     >
       <div
-        className={`mx-auto max-w-[var(--breakpoint-xl)] flex justify-between xl:px-20 md:px-[30px] px-5 pt-5 md:pt-0 md:h-24 text-white 
+        className={`mx-auto max-w-[var(--breakpoint-xl)] flex justify-between xl:px-20 md:px-[30px] px-5 pt-5 md:pt-0 md:h-24 xl:h-[118px] text-white 
             transition-all duration-500 ease-in-out transform`}
       >
         {/* Logo */}

@@ -1,7 +1,6 @@
-import Image from "next/image";
 import Banner from "@/assets/images/banner.jpg";
-import Navigation from "./Navigation";
 import { IconArrowRight, IconStar } from "@/components/svg";
+import Navigation from "./Navigation";
 
 export default function Hero() {
   return (
@@ -51,7 +50,7 @@ export default function Hero() {
         >
           <div className="hidden xl:block xl:absolute top-0 left-0 w-full h-[100px] bg-gradient-to-b from-background-hero/80 to-transparent" />
 
-          <div className="hidden xl:block xl:absolute 2xl:hidden bottom-10 right-10  z-50">
+          <div className="hidden xl:block xl:absolute 2xl:hidden bottom-10 right-10  z-40">
             <div className="hidden xl:flex lg:hidden 2xl:hidden lg:flex-col gap-[9px] bg-background-hero/30 backdrop-blur-[15px] p-6 rounded-[8px] w-[240px]">
               <div className="flex  gap-[5.67px]">
                 {Array.from({ length: 5 }).map((_, idx) => (

@@ -9,6 +9,7 @@
     --GREY_1: #D0D1DB;
     --GREY_2:#FAFAFA;
     --BORDER: #E6E6E6;
+    --BORDER_2:#DBDAD9;
 }
 
 @theme inline {
@@ -73,11 +74,27 @@
   --text-Title-1-M: 48px;
   --text-Title-1-M--line-height: 55px;
   --text-Title-1-M--font-weight: 500;
+  --text-Title-1-M--line-spacing: -0.8px;
+
+  --text-Title-Section-M: 40px;
+  --text-Title-Section-M--line-height: 55px;
+  --text-Title-Section-M--font-weight: 500;
+  --text-Title-Section-M--line-spacing: -0.8px;
 
   --text-Para-R: 20px;
   --text-Para-R--line-height: 170%;
   --text-Para-R--font-weight: 400;
   --text-Para-R--letter-spacing: -0.3px;
+
+  --text-Title-Accordion-M: 20px;
+  --text-Title-Accordion-M--line-height: 120%;
+  --text-Title-Accordion-M--font-weight: 500;
+  --text-Title-Accordion-M--letter-spacing: -0.2px;
+
+  --text-Sub-Number-SB: 20px;
+  --text-Sub-Number-SB--line-height: 30px;
+  --text-Sub-Number-SB--font-weight: 600;
+  --text-Sub-Number-SB--letter-spacing: -0.2px;
 
   --text-Para-Mobile-R: 16px;
   --text-Para-Mobile-R--line-height: 170%;
@@ -100,6 +117,12 @@
   --text-Label-SB: 16px;
   --text-Label-SB--line-height: 14px;
   --text-Label-SB--font-weight: 600;
+  --text-Label-SB--line-spacing: 0;
+
+  --text-Sub-Desc-Number-R: 16px;
+  --text-Sub-Desc-Number-R--line-height: 150%;
+  --text-Sub-Desc-Number-R--font-weight: 400;
+  --text-Sub-Desc-Number-R--line-spacing: -0.1px;
   
   --text-Title-Footer-M: 24px;
   --text-Title-Footer-M--line-height: 26.4px;
@@ -120,6 +143,17 @@
   --text-Para-Accordion-R: 16px;
   --text-Para-Accordion-R--line-height: 170%;
   --text-Para-Accordion-R--font-weight: 400;
+
+  --text-Desc-Accordion-R: 16px;
+  --text-Desc-Accordion-R--line-height: 170%;
+  --text-Desc-Accordion-R--font-weight: 400;
+  --text-Desc-Accordion-R--line-spacing: -0.1px;
+
+
+  --text-Number-L: 72px;
+  --text-Number-L--line-height: 120%;
+  --text-Number-L--font-weight: 300;
+  --text-Number-L--letter-spacing: -0.8px;
   
 }
 
@@ -129,7 +163,14 @@
     --foreground: #ededed;
   }
 }
-
+.scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .scrollbar-none {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;     
+  }
 body {
   background: var(--background);
   color: var(--foreground);
