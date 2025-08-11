@@ -1,0 +1,137 @@
+@import "tailwindcss";
+
+:root {
+    --BRAND_1:#101014;
+    --BRAND_2:#3D3D47;
+    --BRAND_3:#28282C;
+    --BRAND_4:#E9ECF2;
+    --WHITE: #FFFFFF;
+    --GREY_1: #D0D1DB;
+    --GREY_2:#FAFAFA;
+    --BORDER: #E6E6E6;
+}
+
+@theme inline {
+  --breakpoint-*: initial;
+  --breakpoint-sm: 375px;
+  --breakpoint-md: 1024px;
+  --breakpoint-lg: 1280px;
+  --breakpoint-xl: 1440px;
+  --breakpoint-2xl: 1960px;
+
+  --font-manrope: var(--font-manrope);
+
+  --color-background-hero: var(--BRAND_1);
+  --color-background-button: var(--GREY_1);
+  --color-background-label: var(--BRAND_3);
+  --color-background-section: var(--GREY_2);
+  --color-background-card: var(--BRAND_4);
+  --color-title: var(--BRAND_1);
+  --color-paragraph: var(--BRAND_2);
+  --color-border: var(--BORDER);
+  --color-white: var(--WHITE);
+
+  --text-Logo-M: 23.2px;
+  --text-Logo-M--line-height: 27.84px;
+  --text-Logo-M--font-weight: 500;
+  --text-Logo-M--letter-spacing: -0.4px;
+
+  --text-Menu-M: 18px;
+  --text-Menu-M--line-height: 120%;
+  --text-Menu-M--font-weight: 500;
+  --text-Menu-M--letter-spacing: -0.1px;
+
+  --text-Menu-R: 24px;
+  --text-Menu-R--line-height: 120%;
+  --text-Menu-R--font-weight: 400;
+  --text-Menu-R--line-spacing: -1px;
+
+  --text-Banner-Label-R: 14px;
+  --text-Banner-Label-R--line-height: 14px;
+  --text-Banner-Label-R--font-weight: 400;
+
+  --text-Banner-Rate-Label-R: 14px;
+  --text-Banner-Rate-Label-R--line-height: 20.8px;
+  --text-Banner-Rate-Label-R--font-weight: 400;
+  --text-Banner-Rate-Label-R--letter-spacing: -0.1px;
+
+
+  --text-Banner-Heading-M: 56px;
+  --text-Banner-Heading-M--line-height: 120%;
+  --text-Banner-Heading-M--font-weight: 500;
+  --text-Banner-Heading-M--letter-spacing: -1px;
+
+  --text-Banner-Heading-Mobile-M: 40px;
+  --text-Banner-Heading-Mobile-M--line-height: 120%;
+  --text-Banner-Heading-Mobile-M--font-weight: 500;
+  --text-Banner-Heading-Mobile-M--letter-spacing: -1px;
+
+  --text-Title-Banner-M: 48px;
+  --text-Title-Banner-M--line-height: 55px;
+  --text-Title-Banner-M--font-weight: 500;
+
+  --text-Title-1-M: 48px;
+  --text-Title-1-M--line-height: 55px;
+  --text-Title-1-M--font-weight: 500;
+
+  --text-Para-R: 20px;
+  --text-Para-R--line-height: 170%;
+  --text-Para-R--font-weight: 400;
+  --text-Para-R--letter-spacing: -0.3px;
+
+  --text-Para-Mobile-R: 16px;
+  --text-Para-Mobile-R--line-height: 170%;
+  --text-Para-Mobile-R--font-weight: 400;
+  --text-Para-Mobile-R--letter-spacing: -0.3px;
+  
+  --text-Button-M: 16px;
+  --text-Button-M--line-height: 20.8px;
+  --text-Button-M--font-weight: 500;
+
+  --text-user-R: 16px;
+  --text-user-R--line-height: 20.8px;
+  --text-user-R--font-weight: 400;
+
+
+  --text-buttonname-M: 16px;
+  --text-buttonname-M--line-height: 20.8px;
+  --text-buttonname-M--font-weight: 500;
+
+  --text-Label-SB: 16px;
+  --text-Label-SB--line-height: 14px;
+  --text-Label-SB--font-weight: 600;
+  
+  --text-Title-Footer-M: 24px;
+  --text-Title-Footer-M--line-height: 26.4px;
+  --text-Title-Footer-M--font-weight: 500;
+
+  --text-Title-Menu-Footer-R: 18px;
+  --text-Title-Menu-Footer-R--line-height: 27px;
+  --text-Title-Menu-Footer-R--font-weight: 400;
+  
+  --text-Para-Quote-R: 18px;
+  --text-Para-Quote-R--line-height: 170%;
+  --text-Para-Quote-R--font-weight: 400;
+
+  --text-Title-Accordion-M: 20px;
+  --text-Title-Accordion-M--line-height: 30.8px;
+  --text-Title-Accordion-M--font-weight: 500;
+
+  --text-Para-Accordion-R: 16px;
+  --text-Para-Accordion-R--line-height: 170%;
+  --text-Para-Accordion-R--font-weight: 400;
+  
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}

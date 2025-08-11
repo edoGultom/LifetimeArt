@@ -1,0 +1,20 @@
+import { SVGProps } from "react";
+
+type Props = SVGProps<SVGSVGElement>;
+
+function IconStar({ ...props }: Props) {
+  return (
+    <svg
+      width="21"
+      height="21"
+      viewBox="0 0 21 21"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path d="M5.354 18.1785L6.70817 12.3244L2.1665 8.38688L8.1665 7.86605L10.4998 2.34521L12.8332 7.86605L18.8332 8.38688L14.2915 12.3244L15.6457 18.1785L10.4998 15.0744L5.354 18.1785Z" />
+    </svg>
+  );
+}
+
+export default IconStar;
