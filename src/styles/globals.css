@@ -10,6 +10,10 @@
     --GREY_2:#FAFAFA;
     --BORDER_1: #E6E6E6;
     --BORDER_2:#DBDAD9;
+    --RED:#FF2244;
+    --gradient-bg: 
+    linear-gradient(0deg, rgba(255,255,255,0.1), rgba(255,255,255,0.1)),
+    linear-gradient(0deg, rgba(16,16,20,0.1), rgba(16,16,20,0.1));
 }
 
 @theme inline {
@@ -32,6 +36,7 @@
   --color-border1: var(--BORDER_1);
   --color-border2: var(--BORDER_2);
   --color-white: var(--WHITE);
+  --color-danger:var(--RED);
 
   --text-Logo-M: 23.2px;
   --text-Logo-M--line-height: 27.84px;
@@ -77,8 +82,8 @@
   --text-Title-1-M--font-weight: 500;
   --text-Title-1-M--line-spacing: -0.8px;
 
-  --text-Title-Section-M: 40px;
-  --text-Title-Section-M--line-height: 55px;
+  --text-Title-Section-M: 48px;
+  --text-Title-Section-M--line-height: 120%;
   --text-Title-Section-M--font-weight: 500;
   --text-Title-Section-M--line-spacing: -0.8px;
 
@@ -101,6 +106,11 @@
   --text-Para-Mobile-R--line-height: 170%;
   --text-Para-Mobile-R--font-weight: 400;
   --text-Para-Mobile-R--letter-spacing: -0.3px;
+
+  --text-TextInput-R: 16px;
+  --text-TextInput-R--line-height: 100%;
+  --text-TextInput-R--font-weight: 400;
+  --text-TextInput-R--letter-spacing: -0.1px;
   
   --text-Button-M: 16px;
   --text-Button-M--line-height: 20.8px;
@@ -111,9 +121,19 @@
   --text-user-R--font-weight: 400;
 
 
-  --text-buttonname-M: 16px;
-  --text-buttonname-M--line-height: 20.8px;
-  --text-buttonname-M--font-weight: 500;
+  --text-Label-FORM-M: 16px;
+  --text-Label-FORM-M--line-height: 16px;
+  --text-Label-FORM-M--font-weight: 500;
+  --text-Label-FORM-M--letter-spacing: -0.1px;
+
+  --text-Label-FORM-M: 16px;
+  --text-Label-FORM-M--line-height: 16px;
+  --text-Label-FORM-M--font-weight: 500;
+  --text-Label-FORM-M--letter-spacing: 0;
+
+  --text-Button-FORM-M: 16px;
+  --text-Button-FORM-M--line-height: 20.8px;
+  --text-Button-FORM-M--font-weight: 500;
 
   --text-Label-SB: 16px;
   --text-Label-SB--line-height: 14px;
@@ -128,6 +148,7 @@
   --text-Title-Footer-M: 24px;
   --text-Title-Footer-M--line-height: 26.4px;
   --text-Title-Footer-M--font-weight: 500;
+  --text-Title-Footer-M-letter-spacing: -0.4;
 
   --text-Title-Menu-Footer-R: 18px;
   --text-Title-Menu-Footer-R--line-height: 27px;
@@ -136,6 +157,12 @@
   --text-Para-Quote-R: 18px;
   --text-Para-Quote-R--line-height: 170%;
   --text-Para-Quote-R--font-weight: 400;
+  --text-Para-Quote-R--letter-spacing: -0.1px;
+
+  --text-Para-Contact-SB: 18px;
+  --text-Para-Contact-SB--line-height: 170%;
+  --text-Para-Contact-SB--font-weight: 600;
+  --text-Para-Contact-SB--letter-spacing: -0.1px;
 
   --text-Title-Accordion-M: 20px;
   --text-Title-Accordion-M--line-height: 30.8px;

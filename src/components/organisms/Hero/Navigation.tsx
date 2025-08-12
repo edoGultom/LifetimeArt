@@ -6,20 +6,13 @@ import hamburger from "@/assets/images/icon-hamburger.svg";
 import closeMenu from "@/assets/images/icon-close-menu.svg";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { menuItems } from "@/config/const";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isAtTopXL, setIsAtTopXL] = useState(false);
-
-  const menuItems = [
-    { label: "About", href: "#about" },
-    { label: "Services", href: "#services" },
-    { label: "Our Work", href: "#our_work" },
-    { label: "FAQs", href: "#faq" },
-    { label: "Contact", href: "#contact" },
-  ];
 
   useEffect(() => {
     const handleScroll = () => {
