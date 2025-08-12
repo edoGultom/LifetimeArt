@@ -8,7 +8,7 @@ interface CardWrokProps {
 export default function CardWork({ item }: CardWrokProps) {
   return (
     <div className="bg-background-card p-5 xl:p-8 flex flex-col md:flex-row gap-10 xl:gap-20 rounded-[12px] ">
-      <div className="flex-1 relative w-[255px] h-[255px] md:w-[432px] md:h-[380.28px] lg:w-[560px] lg:h-[492.96px]">
+      <div className=" md:flex-1 relative w-[255px] h-[255px] md:w-[432px] md:h-[380.28px] lg:w-[560px] lg:h-[492.96px]">
         <Image
           src={item.url}
           alt=""
