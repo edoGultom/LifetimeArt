@@ -26,9 +26,7 @@ const Card: FC<CardProps> = ({ className, item }) => {
             ))}
           </div>
           <div className="flex text-Desc-Accordion-R text-paragraph  whitespace-normal">
-            Refit transformed our outdoor space with a beautiful garden path.
-            The work was completed on time, and the finish is excellent. A great
-            team to work with!
+            {item.desc}
           </div>
         </div>
         <div className="flex-none ">

@@ -1,8 +1,6 @@
-import Card from "@/components/atom/Card";
 import Label from "@/components/atom/Lable";
 import AutoScrollCards from "@/components/molecules/AutoScrollCards";
-import { testimonials } from "@/config/const";
-import React from "react";
+import GaleryTestimonial from "./GaleryTestimonial";
 
 export default function Testimonials() {
   return (
@@ -23,17 +21,13 @@ export default function Testimonials() {
         </div>
       </div>
       {/* autoscroll animation */}
-      <div className="mt-24 mb-[60px]">
-        {/* {testimonials.map((item, idx) => (
-          <Card
-            key={idx}
-            item={item}
-            className={
-              idx % 2 === 0 ? "bg-[var(--BRAND_4)]" : "bg-[var(--GREY_2)]"
-            }
-          />
-        ))} */}
-        <AutoScrollCards />
+      <div className="mt-24 mb-[60px] xl:px-0 px-10">
+        <div className="hidden md:block">
+          <AutoScrollCards />
+        </div>
+        <div className="block md:hidden">
+          <GaleryTestimonial />
+        </div>
       </div>
     </section>
   );
