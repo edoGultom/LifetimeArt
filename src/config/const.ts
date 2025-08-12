@@ -13,12 +13,34 @@ import Work2 from "@/assets/images/our-work-2.png";
 import Work3 from "@/assets/images/our-work-3.png";
 import { Testimonial, OurWork } from "@/types/testimonials";
 
+export const aboutsNumber = [
+    {
+      label: "Years experience",
+      desc: "Improving homes with expert craftsmanship for years",
+      count: "8",
+    },
+    {
+      label: "Projects completed",
+      desc: "Over 250 successful projects delivered with quality and care",
+      count: "26",
+    },
+    {
+      label: "Skilled Tradespeople",
+      desc: "Our team of 30 experts ensures top-quality results",
+      count: "30",
+    },
+    {
+      label: "Client satisfaction",
+      desc: "All of our clients are satisfied with our work and service",
+      count: "100%",
+    },
+  ];
 export const menuItems = [
     { label: "About", href: "#about" },
     { label: "Services", href: "#services" },
     { label: "Our Work", href: "#our_work" },
     { label: "FAQs", href: "#faq" },
-    { label: "Contact", href: "#contact" },
+    { label: "Contact", href: "#get-in-touch" },
 ];
 export const ourWorks: OurWork[] = [
     {

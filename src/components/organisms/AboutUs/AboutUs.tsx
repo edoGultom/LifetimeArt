@@ -1,30 +1,9 @@
 import React from "react";
 import ImageGalery from "./ImageGalery";
 import Label from "@/components/atom/Lable";
+import { aboutsNumber } from "@/config/const";
 
 export default function AboutUs() {
-  const aboutsNumber = [
-    {
-      label: "Years experience",
-      desc: "Improving homes with expert craftsmanship for years",
-      count: "8",
-    },
-    {
-      label: "Projects completed",
-      desc: "Over 250 successful projects delivered with quality and care",
-      count: "26",
-    },
-    {
-      label: "Skilled Tradespeople",
-      desc: "Our team of 30 experts ensures top-quality results",
-      count: "30",
-    },
-    {
-      label: "Client satisfaction",
-      desc: "All of our clients are satisfied with our work and service",
-      count: "100%",
-    },
-  ];
   return (
     <section id="about">
       {/* TITLE */}
@@ -49,7 +28,6 @@ export default function AboutUs() {
       </div>
       {/* CAROUSEL */}
       <ImageGalery />
-      {/* Experience About */}
       <div className="mx-auto max-w-[var(--breakpoint-xl)] flex gap-20 w-full bg-white md:px-10 xl:px-20 px-10 py-[120px]">
         <div className="grid w-full md:grid-rows-2 md:grid-cols-2 xl:grid-rows-1 xl:md:grid-cols-4 grid-rows-1 gap-x-[120px] gap-y-[120px]">
           {aboutsNumber.map((item) => (
