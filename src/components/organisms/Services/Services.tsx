@@ -11,7 +11,6 @@ import IcExternalWork from "@/assets/images/icon-external-works.svg";
 import IcPlus from "@/assets/images/icon-add.svg";
 import Image from "next/image";
 import Accordion from "@/components/molecules/Accordion";
-import AccordionItem from "@/components/molecules/AccordionItem";
 
 export default function Services() {
   const services = [
@@ -75,21 +74,13 @@ export default function Services() {
             </div>
           </div>
 
-          {/* Accordion */}
-          <div className="flex-1 w-full">
-            <Accordion>
-              {services.map((item, i) => (
-                <AccordionItem
-                  key={i}
-                  icon={item.url.src}
-                  label={item.label}
-                  plusIcon={IcPlus.src}
-                >
-                  {item.desc}
-                </AccordionItem>
-              ))}
-            </Accordion>
-          </div>
+          <Accordion
+            items={services}
+            className="flex-1 flex flex-col gap-4"
+            itemClassName="border-b border-border2"
+            contentClassName="pb-8"
+            headerclassName="py-5"
+          />
         </div>
       </div>
     </section>

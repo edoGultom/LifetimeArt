@@ -8,7 +8,7 @@
     --WHITE: #FFFFFF;
     --GREY_1: #D0D1DB;
     --GREY_2:#FAFAFA;
-    --BORDER: #E6E6E6;
+    --BORDER_1: #E6E6E6;
     --BORDER_2:#DBDAD9;
 }
 
@@ -29,7 +29,8 @@
   --color-background-card: var(--BRAND_4);
   --color-title: var(--BRAND_1);
   --color-paragraph: var(--BRAND_2);
-  --color-border: var(--BORDER);
+  --color-border1: var(--BORDER_1);
+  --color-border2: var(--BORDER_2);
   --color-white: var(--WHITE);
 
   --text-Logo-M: 23.2px;
