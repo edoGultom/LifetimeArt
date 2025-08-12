@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function Services() {
   return (
     <section id="services">
-      <div className="mx-auto max-w-[var(--breakpoint-xl)] flex flex-col w-full bg-white md:px-10 xl:px-20 px-10 py-[120px]">
+      <div className="mx-auto max-w-[var(--breakpoint-xl)] flex flex-col w-full md:px-10 xl:px-20 px-10 py-[120px] bg-[var(--GREY_2)]">
         {/* Title */}
         <div className="flex flex-col gap-4 justify-center items-center w-full">
           <div className="flex flex-1 flex-col justify-center items-center gap-2">

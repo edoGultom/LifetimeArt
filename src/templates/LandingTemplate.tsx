@@ -4,6 +4,7 @@ import Contact from "@/components/organisms/Contact/Contact";
 import FAQs from "@/components/organisms/FAQs/FAQs";
 import Footer from "@/components/organisms/Footer/Footer";
 import Hero from "@/components/organisms/Hero/Hero";
+import OurWork from "@/components/organisms/OurWork/OurWork";
 import Services from "@/components/organisms/Services/Services";
 import Testimonials from "@/components/organisms/Testimonials/Testimonials";
 
@@ -13,6 +14,7 @@ export default function LandingTemplate() {
       <Hero />
       <AboutUs />
       <Services />
+      <OurWork />
       <Testimonials />
       <FAQs />
       <Contact />

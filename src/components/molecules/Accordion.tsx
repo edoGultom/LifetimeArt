@@ -1,14 +1,9 @@
 "use client";
-import React, { useState } from "react";
-import Image, { StaticImageData } from "next/image";
-import clsx from "clsx";
 import IcPlus from "@/assets/images/icon-add.svg";
-
-export interface AccordionItem {
-  label: string;
-  desc: string;
-  url?: StaticImageData;
-}
+import { AccordionItem } from "@/types/accordion";
+import clsx from "clsx";
+import Image from "next/image";
+import { useState } from "react";
 
 interface AccordionProps {
   items: AccordionItem[];
@@ -26,10 +21,6 @@ export default function Accordion({
   contentClassName,
 }: AccordionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
-
-  const toggleItem = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
 
   return (
     <div className={clsx("w-full", className)}>

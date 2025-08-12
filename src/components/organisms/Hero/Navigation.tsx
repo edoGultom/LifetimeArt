@@ -53,11 +53,6 @@ export default function Navigation() {
 
   return (
     <nav
-      //   className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 sm:bg-background-hero  ${
-      //     showHeader || isOpen
-      //       ? "translate-y-0 bg-background-hero"
-      //       : "-translate-y-full xl:!bg-transparent"
-      //   } `}
       className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 
         ${showHeader || isOpen ? "translate-y-0" : "-translate-y-full"} 
         ${

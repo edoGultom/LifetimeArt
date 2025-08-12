@@ -119,6 +119,7 @@
   --text-user-R: 16px;
   --text-user-R--line-height: 20.8px;
   --text-user-R--font-weight: 400;
+  --text-user-R--line-spacing: -0.1px;
 
 
   --text-Label-FORM-M: 16px;
@@ -191,6 +192,33 @@
     --foreground: #ededed;
   }
 }
+
+@keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  @keyframes scroll-right {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .animate-scroll-left {
+  animation: scroll-left 20s linear infinite;
+}
+
+.animate-scroll-right {
+  animation: scroll-right 20s linear infinite;
+}
+
 .scrollbar-none::-webkit-scrollbar {
     display: none;
   }
