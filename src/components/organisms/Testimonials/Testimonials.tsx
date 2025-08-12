@@ -1,6 +1,7 @@
 import Label from "@/components/atom/Lable";
 import AutoScrollCards from "@/components/molecules/AutoScrollCards";
 import GaleryTestimonial from "./GaleryTestimonial";
+import { testimonials } from "@/config/const";
 
 export default function Testimonials() {
   return (
@@ -26,7 +27,7 @@ export default function Testimonials() {
           <AutoScrollCards />
         </div>
         <div className="block md:hidden">
-          <GaleryTestimonial />
+          <GaleryTestimonial items={testimonials} />
         </div>
       </div>
     </section>
