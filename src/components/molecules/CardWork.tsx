@@ -42,6 +42,7 @@ export default function CardWork({ item }: CardWrokProps) {
         </span>
         <div className="mt-[9px] flex gap-[15px]">
           <Label>{item.type}</Label>
+          <Label>{item.weeks}</Label>
         </div>
       </div>
     </div>
